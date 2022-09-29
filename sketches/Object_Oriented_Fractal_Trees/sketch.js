@@ -23,7 +23,7 @@ function setup() {
 
 function iterateTree() {
   for (let i = tree.length-1; i >= 0; i--) {
-    if (!tree[i].finished && frameCount<350) {
+    if (!tree[i].finished && frameCount<400) {
       tree.push(tree[i].branchA());
       tree.push(tree[i].branchB());
     }
@@ -63,9 +63,13 @@ function draw() {
     translate(leaves[i].x, leaves[i].y);
     rotate(leafAngle);
     console.log(leafAngle[i])
-    ellipse(0, 0, 15, 30);
+    ellipse(0, 0, 20, 35);
+    // stroke("#0583F2");
+    // strokeWeight(6);
+    // line(0, -17, 0, 17);
     pop();
     leaves[i].y += random(0, 2);
+  
     leafAngle+=PI/3;
   }
 

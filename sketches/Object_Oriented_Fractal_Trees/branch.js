@@ -13,7 +13,7 @@ class Branch {
   
     show() {
       stroke("#2af337");
-      strokeWeight(15);
+      strokeWeight(20);
       line(this.begin.x, this.begin.y, this.end.x, this.end.y);
     }
   
