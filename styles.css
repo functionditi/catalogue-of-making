@@ -22,12 +22,12 @@
       background-size: 12rem 6rem; /* Resize the background image to cover the entire container */
 
      /* background-color: #006d59; */
-          background-color: #006d59;
+          background-color: #0583F2;
 
      /* background-image: url('assets/discarded-leaves-MASKED-NOISE.png'); */
   background-image:
-    linear-gradient(to right, whitesmoke 0.5px, transparent 0.5px),
-    linear-gradient(to bottom, whitesmoke 0.5px, transparent 0.5px);
+    linear-gradient(to right, #2af337 0.5px, transparent 0.5px),
+    linear-gradient(to bottom, #2af337 0.5px, transparent 0.5px);
     height: 100%;
     width: 70%;
      
@@ -45,11 +45,11 @@ font-family: 'Formula Condensed';
    
  margin:0vw;
 
- color:  whitesmoke;
-  -webkit-text-fill-color:  whitesmoke
+ color:  #2af337;
+  -webkit-text-fill-color:  #2af337
 ; 
   -webkit-text-stroke-width: 0.2vw;
-  -webkit-text-stroke-color: #006d59;
+  -webkit-text-stroke-color: #2af337;
   
 }
 
@@ -92,9 +92,9 @@ alt{
  .btn {
   font-family: 'Neue Montreal';
   font-weight: 100;
-  border: 3px solid #006d59;
+  border: 3px solid #056CF2;
   background-color: whitesmoke;
-  color: #006d59;
+  color: #056CF2;
   padding: 7px 14px;
   font-size: 1.5rem;
   cursor: pointer;
@@ -206,7 +206,7 @@ alt{
   }
 
   p{
-    color: whitesmoke;
+    color: #2af337;
   }
   
   
