@@ -13,6 +13,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   let a = createVector(width / 2, height);
   let b = createVector(width / 2, height - 300);
+  
   let root = new Branch(a, b);
 
   tree[0] = root;
@@ -31,7 +32,7 @@ function iterateTree() {
   }
   count++;
 
-  if (count === 6) {
+  if (count === 7) {
     for (var i = 0; i < tree.length; i++) {
       if (!tree[i].finished) {
         let leaf = tree[i].end.copy();
@@ -57,7 +58,7 @@ function draw() {
   let leafAngle=0;
 
   for (var i = 0; i < leaves.length; i++) {
-    fill("#2af337");
+    fill("#27df34");
     noStroke();
     push();
     translate(leaves[i].x, leaves[i].y);
@@ -69,6 +70,7 @@ function draw() {
     // line(0, -17, 0, 17);
     pop();
     leaves[i].y += random(0, 2);
+    leaves[i].x += random(-2, 2);
   
     leafAngle+=PI/3;
   }

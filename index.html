@@ -1,92 +1,243 @@
-<!DOCTYPE html >
-<html lang="en" >
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>catalogue-of-making</title>
-    <link rel="stylesheet" type="text/css" href="./styles.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
-    <!-- p5.touchgui -->
-    <script src="https://unpkg.com/p5.touchgui@0.5.2/lib/p5.touchgui.js"></script>    
-  </head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  
+    <div class="container">
 
-  <main>
-    <body>
-      <div class="parallax">
+      <!-- NAV -->
+        <aside class="sidebar">
+          <ul class="nav">
+
+            <!-- <a onclick="showPage('main-page')" id="take-to-home">
+              <figure>
+               
+              </figure>       
+              <h3>take me home.</h3>
+            </a> -->
+           
+            <div style="position: fixed; background-color: whitesmoke; border-radius: 5px;" class="nav-card" onclick="showPage('main-page')" id="take-to-home">
+              <h4>HOME</h4>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+          <div class="nav-card" onclick="showPage('exp-1-page')" id="take-to-exp-1">
+            <h3>
+              EXP 1: CAPACITIVE SENSORS</h3>
+            <figure>
+              <img src="./assets/nav-bar/exp-1-feature-blue.jpg" alt="">
+            </figure>       
+            
+          </div>
+          <br>
+          <div class="nav-card" onclick="showPage('exp-2-page')" id="take-to-exp-2">
+            <h3>
+              EXP 2: TOUCH ME NOTS
+            </h3>
+            <figure>
+              <img src="./assets/nav-bar/exp-2-feature-blue.jpg" alt="">
+            </figure>       
+            
+          </div>
+          <br>
+          <div class="nav-card" onclick="showPage('exp-2-page')" id="take-to-exp-3">
+            <h3>
+              EXP 3: BANANA LEAVES
+            </h3>
+            <figure>
+              <img src="./assets/nav-bar/exp-3-feature-blue.jpg" alt="">
+            </figure>       
+
+          </div>
+          <br>
       
-      </div>
-      <div id="javascript_sketch" class="fixedonscreen" style="top:0%; 
-      left:60%; height: 100%; position:absolute">
-        <iframe src="sketches/Object_Oriented_Fractal_Trees/"></iframe>
-      </div>
-    
-      <h1>
-            CAT<span style="font-feature-settings:&quot;ss01&quot;;-moz-font-feature-settings: &quot;ss01&quot;;-webkit-font-feature-settings: &quot;ss01&quot;;">A</span>LOG<span style="font-feature-settings:&quot;ss01&quot;;-moz-font-feature-settings: &quot;ss01&quot;;-webkit-font-feature-settings: &quot;ss01&quot;;"></span><span style="font-feature-settings:&quot;ss01&quot;;-moz-font-feature-settings: &quot;ss01&quot;;-webkit-font-feature-settings: &quot;ss01&quot;;">UE</span>
-        </h1>
-        <h1 style="padding-bottom:0vw;">
-            O<span style="font-feature-settings:&quot;ss01&quot;;-moz-font-feature-settings: &quot;ss01&quot;;-webkit-font-feature-settings: &quot;ss01&quot;;">F</span>  MAK<span style="font-feature-settings:&quot;ss01&quot;;-moz-font-feature-settings: &quot;ss01&quot;;-webkit-font-feature-settings: &quot;ss01&quot;;">I</span>N<span style="font-feature-settings:&quot;ss01&quot;;-moz-font-feature-settings: &quot;ss01&quot;;-webkit-font-feature-settings: &quot;ss01&quot;;">G</span> !
-        </h1>
+          <div class="nav-card" onclick="showPage('exp-2-page')" id="take-to-exp-4">
+            <h3>
+              EXP 4: GOING OUTSIDE
+            </h3>
+            <figure>
+              <img src="./assets/nav-bar/exp-4-feature-blue.jpg" alt="">
+            </figure>       
+      
+          </div>
+          <br>
 
-<a href="./exp-1.html"><h3>EXP 1: The plant as a capacitive sensor.</h3>     </a>
+          <div class="nav-card" onclick="showPage('exp-2-page')" id="take-to-exp-5">
+            <h3>
+              EXP 5: LEAF LITTER
+            </h3>
+            <figure>
+              <img src="./assets/nav-bar/exp-5-feature-blue.jpg" alt="">
+            </figure>       
+            
+          </div>
+         
+       
+         
 
-<h3>EXP 2: Mimosa Pudica as a display.</h3>     
-<h3>EXP 3: Banana leaf investigations.</h3>     
-<h3>EXP 4: Going outside for a change.</h3>     
-<h3>EXP 5: Collecting some leaf litter.</h3>     
+          </ul>
+        </aside>
 
-    
-      <!-- <div class="row index">
-        
-        <div class="column"> 
-          <a id="box" href="./exp-1.html"><button type="button" class="btn">EXP-1</button></a>
-    
-        </div>
-        <div class="column">
-        </div>
-        <div class="column">
-          <a href="./week6.html"><button class="btn">EXP-2</button></a>
-    
-        </div>
-        <div class="column">
-          <a href="./week6.html"><button class="btn">EXP-3</button></a>
-        </div>
-      </div>
-    
-      <div class="row index">
-        <div class="column"> 
-          <a href="./week6.html"><button class="btn">EXP-4</button></a>
-    
-        </div>
-        <div class="column">
-          <a href="./week6.html"><button class="btn">EXP-5</button></a>
-    
-        </div>
-        <div class="column">
-    
-        </div>
-        <div class="column">
+        <!-- END OF NAV -->
+        <main class="main">
+
           
-        </div>
-      </div> -->
-    
-      <p>
-    
-        WATCH OUT FOR THIS SPACE, MORE COMING SOON!
-      </p>
 
-      <div id="hidden" style="display: none;">
-        <h2>AI<span style="font-feature-settings:&quot;ss01&quot;;-moz-font-feature-settings: &quot;ss01&quot;;-webkit-font-feature-settings: &quot;ss01&quot;;">M:</span> </h2>
+            <!-- MAIN PAGE -->
+          <div class="page" id="main-page">
+                  <div id="javascript_sketch" class="fixedonscreen" style="top:0%; left:60%; height: 100%; position:absolute">
+                    <iframe src="sketches/Object_Oriented_Fractal_Trees/"></iframe>
+                  </div>
+
+                  <h1>
+                    CAT<span style="font-feature-settings:&quot;ss01&quot;;-moz-font-feature-settings: &quot;ss01&quot;;-webkit-font-feature-settings: &quot;ss01&quot;;">A</span>LOG<span style="font-feature-settings:&quot;ss01&quot;;-moz-font-feature-settings: &quot;ss01&quot;;-webkit-font-feature-settings: &quot;ss01&quot;;"></span><span style="font-feature-settings:&quot;ss01&quot;;-moz-font-feature-settings: &quot;ss01&quot;;-webkit-font-feature-settings: &quot;ss01&quot;;">UE</span>
+                </h1>
+                <h1 style="padding-bottom:0vw;">
+                    O<span style="font-feature-settings:&quot;ss01&quot;;-moz-font-feature-settings: &quot;ss01&quot;;-webkit-font-feature-settings: &quot;ss01&quot;;">F</span>  MAK<span style="font-feature-settings:&quot;ss01&quot;;-moz-font-feature-settings: &quot;ss01&quot;;-webkit-font-feature-settings: &quot;ss01&quot;;">I</span>N<span style="font-feature-settings:&quot;ss01&quot;;-moz-font-feature-settings: &quot;ss01&quot;;-webkit-font-feature-settings: &quot;ss01&quot;;">G</span> !
+                </h1>
+                <h2 style="width: 60%" class="disabled">THIS CATALOGUE ACCOMPANIES BIO_<i>INTERFACES</i> AND IS A DOCUMENTATION OF ALL <span style="color: #056CF2;">←EXPERIMENTS</span>  HELD IN TANDEM.</h2>
+                <br>
+              
+
+                  <a href="https://www.are.na/aditi-neti/design-tech-nature" target="_blank"><h2 style="width: 60%; text-decoration: underline;">ARE.NA ↗</h2></a>
+                  <a href="https://biointerfaces.cargo.site/" target="_blank"><h2 style="width: 60%; text-decoration: underline;">REPOSITORY ↗</h2></a>
+                  <a href="https://functionditi.github.io/creative-process-journal/" target="_blank"><h2 style="width: 60%; text-decoration: underline;">PROCESS JOURNAL ↗</h2></a>
+
+          </div>
+
+          <!-- END OF MAIN PAGE -->
+
+          <!-- EXPERIMENT 1 -->
+          <div class="page" style="display:none;" id="exp-1-page">
+            <h4 style="font-size: 5rem;">EXP 1: CAPACITIVE SENSORS</h4>
+            <!-- <div class="row">
+              <div class="column">
+                <p>
+                  Since my project is based on the premise of Living Media Interfaces, it also references previous case studies like <i>Botanicus Interacticus</i> and <i>Interactive Plant Growing</i>. 
+                </p>
+                
+              </div>
+              <div class="column">
+                <p>
+                  These both factor in human-plant touch, I wanted to explore the value of these interactions myself and set it up using Arduino computing. 
+                </p>
+              </div>
+              
+            </div> -->
+            <br>
+            <div class="row">
+              <div class="column">
+                <p>
+                  Trying to create a touch sensor using two post-its lined with wire.
+                </p>
+              </div> 
+
+              <div class="column">
+                <video src="./assets/exp-1/experimentation-post-its.mp4" controls muted></video>
+              </div>
+            
+              <div class="column">
+                <video src="./assets/exp-1/experimentation-2-touch-circuit.mov" controls muted></video>
+              </div> 
+             
+              
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <div class="row">
+              <div class="column">
+                <p>
+                  Trying to create a touch sensor using two post-its lined with wire.
+                </p>
+              </div> 
+            
+              <div class="column">
+                <video src="./assets/exp-1/touch-frankie-1.mp4" controls muted></video>
+              </div> 
+              <div class="column">
+                <video src="./assets/exp-1/potentiometer.MOV" controls muted></video>
+              </div> 
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <div class="row">
+              <div class="column">
+                <p>
+                  Trying to create a touch sensor using two post-its lined with wire.
+                </p>
+              </div> 
+            
+              <div class="column" style="flex-grow: 2;">
+                <video src="./assets/exp-1/frankie.mp4" controls muted></video>
+              </div> 
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <div class="row">
+              <div class="column">
+                <p>
+                  Trying to create a touch sensor using two post-its lined with wire.
+                </p>
+              </div> 
+            
+              <div class="column" style="flex-grow: 2;">
+                <video src="./assets/exp-1/visualiser.mp4" controls muted></video>
+              </div> 
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <div class="row">
+              <div class="column">
+                <p>
+                  Trying to create a touch sensor using two post-its lined with wire.
+                </p>
+              </div> 
+            
+              <div class="column" style="flex-grow: 2;">
+                <img src="./assets/exp-1/john-cage.png" alt="">
+                
+              </div> 
+            </div>
+
+
+          </div>
+          <!-- END OF EXPERIMENT 1 -->
+          
+
+        </main>
+        <script>
+          function showPage(elementName) {
+            var y=document.getElementsByClassName('page');
+            for (let i = 0; i < y.length; i++) {
+              y[i].style.display='none';
+              
+
+              }
+            var x = document.getElementById(elementName);
+            
+            if (x.style.display == 'none') {
+                x.style.display = 'block';
+            }
+          }
+        </script>
       </div>
-  
-      
-      
-  
-      <script src="./script.js"></script>
-    
-    </body>
-
-  </main>
-  
+</body>
+</html>

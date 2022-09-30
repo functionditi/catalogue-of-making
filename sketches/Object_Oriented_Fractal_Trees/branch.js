@@ -12,15 +12,15 @@ class Branch {
     }
   
     show() {
-      stroke("#2af337");
+      stroke("#27df34");
       strokeWeight(20);
       line(this.begin.x, this.begin.y, this.end.x, this.end.y);
     }
   
     branchA() {
       let dir = p5.Vector.sub(this.end, this.begin);
-      dir.rotate(PI / 12);
-      dir.mult(0.67);
+      dir.rotate(PI / 16);
+      dir.mult(0.7);
       let newEnd = p5.Vector.add(this.end, dir);
       let b = new Branch(this.end, newEnd);
       return b;
@@ -28,7 +28,7 @@ class Branch {
   
     branchB() {
       let dir = p5.Vector.sub(this.end, this.begin);
-      dir.rotate(-PI / 6);
+      dir.rotate(-PI / 10);
       dir.mult(0.67);
       let newEnd = p5.Vector.add(this.end, dir);
       let b = new Branch(this.end, newEnd);
