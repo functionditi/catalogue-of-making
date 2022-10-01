@@ -134,7 +134,7 @@ html, body {
          padding-bottom:0vw;
        margin:0vw;
        transition: 0.2s;
-        line-height: 2rem;
+        line-height: 1.5rem;
         color:#056CF2;
     
       }
@@ -160,8 +160,9 @@ html, body {
     
         p{
           font-family: 'Neue Montreal';
-          font-size: 1.5vw;
+          font-size: 1.2vw;
           color: #056CF2;
+          background-color: whitesmoke;
         }
 
         figcaption{

@@ -3,8 +3,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Catalogue Of Making</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.ico">
+
 </head>
 <body>
   
@@ -31,16 +33,16 @@
 
           <div class="nav-card" onclick="showPage('exp-1-page')" id="take-to-exp-1">
             <h3>
-              EXP 1: CAPACITIVE SENSORS</h3>
+              1 BASIC PLANT INTERACTION</h3>
             <figure>
               <img src="./assets/nav-bar/exp-1-feature-blue.jpg" alt="">
             </figure>       
-            
           </div>
+          
           <br>
           <div class="nav-card" onclick="showPage('exp-2-page')" id="take-to-exp-2">
             <h3>
-              EXP 2: TOUCH ME NOTS
+              2 TOUCH ME NOTS
             </h3>
             <figure>
               <img src="./assets/nav-bar/exp-2-feature-blue.jpg" alt="">
@@ -50,7 +52,7 @@
           <br>
           <div class="nav-card" onclick="showPage('exp-2-page')" id="take-to-exp-3">
             <h3>
-              EXP 3: BANANA LEAVES
+              3 BANANA LEAVES
             </h3>
             <figure>
               <img src="./assets/nav-bar/exp-3-feature-blue.jpg" alt="">
@@ -61,7 +63,7 @@
       
           <div class="nav-card" onclick="showPage('exp-2-page')" id="take-to-exp-4">
             <h3>
-              EXP 4: GOING OUTSIDE
+              4 GOING OUTSIDE
             </h3>
             <figure>
               <img src="./assets/nav-bar/exp-4-feature-blue.jpg" alt="">
@@ -72,7 +74,7 @@
 
           <div class="nav-card" onclick="showPage('exp-2-page')" id="take-to-exp-5">
             <h3>
-              EXP 5: LEAF LITTER
+            5 LEAF LITTER
             </h3>
             <figure>
               <img src="./assets/nav-bar/exp-5-feature-blue.jpg" alt="">
@@ -117,26 +119,51 @@
 
           <!-- EXPERIMENT 1 -->
           <div class="page" style="display:none;" id="exp-1-page">
-            <h4 style="font-size: 5rem;">EXP 1: CAPACITIVE SENSORS</h4>
-            <!-- <div class="row">
+            <div class="row">
               <div class="column">
-                <p>
-                  Since my project is based on the premise of Living Media Interfaces, it also references previous case studies like <i>Botanicus Interacticus</i> and <i>Interactive Plant Growing</i>. 
-                </p>
+                <h4 style="font-size: 5rem;">EXP 1 </h4>
+
+              </div>
+              <div class="column" style="flex-grow: 2;">
+                <h4 style="font-size: 5rem;">BASIC PLANT INTERACTION</h4>
+
+              </div>
+
+            </div>
+            
+            <div class="row">
+              <div class="column"></div>
+
+              <div class="column" style="flex-grow: 2;">
+                <h2>
+                  <span style="font-size: 2rem; background-color: whitesmoke;">
+                    Since my project is based on the premise of Living Media Interfaces, it also references previous case studies like <i>Botanicus Interacticus</i> and <i>Interactive Plant Growing</i>. 
+
+                    These both factor in human-plant touch, and I wanted to explore the value of these interactions myself and set it up using Arduino physical computing. 
+                  </span>
+                 
+                </h2>
                 
               </div>
-              <div class="column">
+              <!-- <div class="column">
                 <p>
-                  These both factor in human-plant touch, I wanted to explore the value of these interactions myself and set it up using Arduino computing. 
+                  
                 </p>
-              </div>
+              </div> -->
               
-            </div> -->
+            </div>
+            <br>
+            <br>
             <br>
             <div class="row">
               <div class="column">
                 <p>
-                  Trying to create a touch sensor using two post-its lined with wire.
+                  → Trying to create a touch sensor using two post-its lined with wire.
+                  
+                </p>
+
+                <p>
+                  → Also setting up a circuit that would close once a finger touched it, but would only faintly work when finger was wet.
                 </p>
               </div> 
 
@@ -157,8 +184,10 @@
             <div class="row">
               <div class="column">
                 <p>
-                  Trying to create a touch sensor using two post-its lined with wire.
+                  → Finally using capacativeSense to create a sensor that would detect touch. Sticking some copper tape in the plant's soil to turn it into a sensor too.
                 </p>
+                <p>
+                  → Attempting to establish a serial connection with p5.js (here, using a potentiometer).                </p>
               </div> 
             
               <div class="column">
@@ -176,7 +205,7 @@
             <div class="row">
               <div class="column">
                 <p>
-                  Trying to create a touch sensor using two post-its lined with wire.
+                  → Set up a p5.js connection! Represented each instance of plant-touch with a flurry of digital monstera leaves.
                 </p>
               </div> 
             
@@ -192,7 +221,7 @@
             <div class="row">
               <div class="column">
                 <p>
-                  Trying to create a touch sensor using two post-its lined with wire.
+                  → Attempting to create a more systematic form of visualisation: longer+harder touch results in a larger circle, lighter+softer touch results in a smaller circle.
                 </p>
               </div> 
             
@@ -207,7 +236,7 @@
             <div class="row">
               <div class="column">
                 <p>
-                  Trying to create a touch sensor using two post-its lined with wire.
+                  → Attempting to create a more systematic form of visualisation: longer+harder touch results in a larger circle, lighter+softer touch results in a smaller circle.
                 </p>
               </div> 
             
@@ -216,8 +245,28 @@
                 
               </div> 
             </div>
+            <br>
+<br>
+            <div class="row">
+              <div class="column">
+                <h4>
+                  <span style="font-size: 2rem; background-color: whitesmoke;">
+                    NEXT STEPS
+                  </span>
+                </h4>
+              </div>
+              <div class="column" style="flex-grow: 2;">
+                <h2>
+                  <span style="font-size: 2rem; background-color: whitesmoke;">
+                    FIND MULTI-LAYERED, NUANCED WAYS TO REPRESENT AN INSTANCE OF HUMAN-PLANT INTERACTION.
+                  </span>
+                </h2>
+              </div>
+              
 
+            </div>
 
+            
           </div>
           <!-- END OF EXPERIMENT 1 -->
           
@@ -235,6 +284,7 @@
             
             if (x.style.display == 'none') {
                 x.style.display = 'block';
+              
             }
           }
         </script>
